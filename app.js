@@ -5,11 +5,12 @@ function exibirTextoNaTela (tag, texto) {
     campo.innerHTML = texto;
 }
 
-exibirTextoNaTela('h1', 'Jogo do número secreto')
-exibirTextoNaTela('p', 'Escolha um número entre 1 e 100:')
+exibirTextoNaTela('h1', 'Jogo do número secreto');
+exibirTextoNaTela('p', 'Escolha um número entre 1 e 100:');
 
 function verificarChute() {
-    console.log(numeroSecreto);
+    let chute = document.querySelector('input').value;
+    console.log(chute == numeroSecreto);
 }
 
 function gerarNumeroAleatorio() {
